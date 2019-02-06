@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\PusherBeams;
+namespace Rich2k\PusherBeams;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Notifications\Events\NotificationFailed;
@@ -51,7 +51,7 @@ class PusherBeams
         try {
             $response = $this->beams->publish(
                 $interest,
-                $notification->toPushNotification($notifiable)->toArray()
+                $notification->toPusherBeamsNotification($notifiable)->toArray()
             );
         } catch (\Exception $e) {
             $this->events->fire(

@@ -4,32 +4,32 @@ namespace Neo\PusherBeams\Test;
 
 use Illuminate\Support\Arr;
 use PHPUnit\Framework\TestCase;
-use Neo\PusherBeams\PusherMessage;
+use Neo\PusherBeams\PusherBeamsMessage;
 use Neo\PusherBeams\Exceptions\CouldNotCreateMessage;
 
 class MessageTest extends TestCase
 {
-    /** @var \Neo\PusherBeams\PusherMessage */
+    /** @var \Neo\PusherBeams\PusherBeamsMessage */
     protected $message;
 
     public function setUp()
     {
         parent::setUp();
 
-        $this->message = new PusherMessage();
+        $this->message = new PusherBeamsMessage();
     }
 
     /** @test */
     public function it_can_accept_a_message_when_constructing_a_message()
     {
-        $message = new PusherMessage('myMessage');
+        $message = new PusherBeamsMessage('myMessage');
         $this->assertEquals('myMessage', Arr::get($message->toiOS(), 'apns.aps.alert.body'));
     }
 
     /** @test */
     public function it_provides_a_create_method()
     {
-        $message = PusherMessage::create('myMessage');
+        $message = PusherBeamsMessage::create('myMessage');
         $this->assertEquals('myMessage', Arr::get($message->toiOS(), 'apns.aps.alert.body'));
     }
 
@@ -105,7 +105,7 @@ class MessageTest extends TestCase
     /** @test */
     public function it_can_send_message_to_multiple_platforms()
     {
-        $this->message->ios()->withAndroid(new PusherMessage());
+        $this->message->ios()->withAndroid(new PusherBeamsMessage());
         $this->assertTrue(Arr::has($this->message->toArray(), 'apns'));
         $this->assertTrue(Arr::has($this->message->toArray(), 'fcm'));
     }

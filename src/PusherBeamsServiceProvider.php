@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\PusherBeams;
+namespace Rich2k\PusherBeams;
 
 use Illuminate\Support\ServiceProvider;
 use Pusher\PushNotifications\PushNotifications;

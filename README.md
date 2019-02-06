@@ -27,7 +27,7 @@ This package makes it easy to send [Pusher push notifications](https://docs.push
 You can install the package via composer:
 
 ``` bash
-composer require neo/pusher-beams
+composer require Rich2k/pusher-beams
 ```
 ...
 

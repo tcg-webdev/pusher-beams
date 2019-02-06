@@ -1,11 +1,11 @@
 <?php
 
-namespace Neo\PusherBeams;
+namespace Rich2k\PusherBeams;
 
 use Illuminate\Support\Arr;
-use Neo\PusherBeams\Exceptions\CouldNotCreateMessage;
+use Rich2k\PusherBeams\Exceptions\CouldNotCreateMessage;
 
-class PusherMessage
+class PusherBeamsMessage
 {
     /**
      * The device platform (iOS/Android).
@@ -131,10 +131,10 @@ class PusherMessage
     /**
      * Set an extra message to be sent to Android.
      *
-     * @param \Neo\PusherBeams\PusherMessage $message
+     * @param \Neo\PusherBeams\PusherBeamsMessage $message
      * @return $this
      */
-    public function withAndroid(PusherMessage $message)
+    public function withAndroid(PusherBeamsMessage $message)
     {
         $this->withExtra($message->android());
 
@@ -144,10 +144,10 @@ class PusherMessage
     /**
      * Set an extra message to be sent to iOS.
      *
-     * @param \Neo\PusherBeams\PusherMessage $message
+     * @param \Neo\PusherBeams\PusherBeamsMessage $message
      * @return $this
      */
-    public function withiOS(PusherMessage $message)
+    public function withiOS(PusherBeamsMessage $message)
     {
         $this->withExtra($message->iOS());
 
@@ -157,10 +157,10 @@ class PusherMessage
     /**
      * Set an extra message to be sent to another platform.
      *
-     * @param \Neo\PusherBeams\PusherMessage $message
+     * @param \Neo\PusherBeams\PusherBeamsMessage $message
      * @return void
      */
-    private function withExtra(PusherMessage $message)
+    private function withExtra(PusherBeamsMessage $message)
     {
         if ($message->getPlatform() == $this->platform) {
             throw CouldNotCreateMessage::platformConflict($this->platform);

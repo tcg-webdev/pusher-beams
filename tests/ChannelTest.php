@@ -7,7 +7,7 @@ use Illuminate\Notifications\Events\NotificationFailed;
 use Illuminate\Notifications\Notifiable;
 use Neo\PusherBeams\PusherBeams;
 use Illuminate\Notifications\Notification;
-use Neo\PusherBeams\PusherMessage;
+use Neo\PusherBeams\PusherBeamsMessage;
 use Mockery;
 use Pusher\PushNotifications\PushNotifications;
 use PHPUnit\Framework\TestCase;
@@ -63,6 +63,6 @@ class TestNotification extends Notification
 {
     public function toPushNotification($notifiable)
     {
-        return new PusherMessage();
+        return new PusherBeamsMessage();
     }
 }

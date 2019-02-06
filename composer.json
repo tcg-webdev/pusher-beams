@@ -1,5 +1,5 @@
 {
-    "name": "neo/pusher-beams",
+    "name": "Rich2k/pusher-beams",
     "description": "Pusher Beams is a push notification service from Pusher.",
     "keywords": [
         "laravel",
@@ -7,19 +7,22 @@
         "push-notifications",
         "notification",
         "push",
-        "beams",
-        "neo"
+        "beams"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/neoighodaro/pusher-beams",
+    "homepage": "https://github.com/Rich2k/pusher-beams",
     "support": {
-        "issues": "https://github.com/neoighodaro/pusher-beams/issues",
-        "source": "https://github.com/neoighodaro/pusher-beams"
+        "issues": "https://github.com/Rich2k/pusher-beams/issues",
+        "source": "https://github.com/Rich2k/pusher-beams"
     },
     "authors": [
         {
             "name": "Neo Ighodaro",
             "email": "neo@creativitykills.co"
+        },
+        {
+            "name": "Richard Hyland",
+            "email": "rhyland@gmail.com"
         }
     ],
     "require": {
@@ -28,7 +31,7 @@
         "illuminate/notifications": "5.5.* || 5.6.*",
         "illuminate/queue": "5.5.* || 5.6.*",
         "illuminate/support": "5.5.* || 5.6.*",
-        "pusher/pusher-push-notifications": "^0.10.6"
+        "pusher/pusher-push-notifications": "^1.0"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.5",
@@ -36,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Neo\\PusherBeams\\": "src"
+            "Rich2k\\PusherBeams\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Neo\\PusherBeams\\Test\\": "tests"
+            "Rich2k\\PusherBeams\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -50,7 +53,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Neo\\PusherBeams\\PusherBeamsServiceProvider"
+                "Rich2k\\PusherBeams\\PusherBeamsServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\PusherBeams\Exceptions;
+namespace Rich2k\PusherBeams\Exceptions;
 
 use Exception;
 
