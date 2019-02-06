@@ -95,7 +95,7 @@ class PusherBeamsMessage
      *
      * @return $this
      *
-     * @throws \Neo\PusherBeams\Exceptions\CouldNotCreateMessage
+     * @throws \Rich2k\PusherBeams\Exceptions\CouldNotCreateMessage
      */
     public function platform($platform)
     {
@@ -131,7 +131,7 @@ class PusherBeamsMessage
     /**
      * Set an extra message to be sent to Android.
      *
-     * @param \Neo\PusherBeams\PusherBeamsMessage $message
+     * @param \Rich2k\PusherBeams\PusherBeamsMessage $message
      * @return $this
      */
     public function withAndroid(PusherBeamsMessage $message)
@@ -144,7 +144,7 @@ class PusherBeamsMessage
     /**
      * Set an extra message to be sent to iOS.
      *
-     * @param \Neo\PusherBeams\PusherBeamsMessage $message
+     * @param \Rich2k\PusherBeams\PusherBeamsMessage $message
      * @return $this
      */
     public function withiOS(PusherBeamsMessage $message)
@@ -157,7 +157,7 @@ class PusherBeamsMessage
     /**
      * Set an extra message to be sent to another platform.
      *
-     * @param \Neo\PusherBeams\PusherBeamsMessage $message
+     * @param \Rich2k\PusherBeams\PusherBeamsMessage $message
      * @return void
      */
     private function withExtra(PusherBeamsMessage $message)
