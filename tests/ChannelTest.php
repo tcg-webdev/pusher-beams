@@ -1,13 +1,13 @@
 <?php
 
-namespace Neo\PusherBeams\Test;
+namespace Rich2k\PusherBeams\Test;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Notifications\Events\NotificationFailed;
 use Illuminate\Notifications\Notifiable;
-use Neo\PusherBeams\PusherBeams;
+use Rich2k\PusherBeams\PusherBeams;
 use Illuminate\Notifications\Notification;
-use Neo\PusherBeams\PusherBeamsMessage;
+use Rich2k\PusherBeams\PusherBeamsMessage;
 use Mockery;
 use Pusher\PushNotifications\PushNotifications;
 use PHPUnit\Framework\TestCase;

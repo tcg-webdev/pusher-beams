@@ -1,6 +1,6 @@
 <?php
 
-namespace Neo\PusherBeams\Test;
+namespace Rich2k\PusherBeams\Test;
 
 class Notifiable
 {

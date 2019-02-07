@@ -1,15 +1,15 @@
 <?php
 
-namespace Neo\PusherBeams\Test;
+namespace Rich2k\PusherBeams\Test;
 
 use Illuminate\Support\Arr;
 use PHPUnit\Framework\TestCase;
-use Neo\PusherBeams\PusherBeamsMessage;
-use Neo\PusherBeams\Exceptions\CouldNotCreateMessage;
+use Rich2k\PusherBeams\PusherBeamsMessage;
+use Rich2k\PusherBeams\Exceptions\CouldNotCreateMessage;
 
 class MessageTest extends TestCase
 {
-    /** @var \Neo\PusherBeams\PusherBeamsMessage */
+    /** @var \Rich2k\PusherBeams\PusherBeamsMessage */
     protected $message;
 
     public function setUp()
