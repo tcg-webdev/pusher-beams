@@ -32,7 +32,7 @@ class ChannelTest extends TestCase
     /** @test */
     public function it_can_send_a_notification()
     {
-        $message = $this->notification->toPushNotification($this->notifiable);
+        $message = $this->notification->toPusherBeamsNotification($this->notifiable);
         $data = $message->toArray();
         $this->beams->shouldReceive('publish')->with(['interest_name'], $data)->andReturn(['publishId' => '12345']);
         $this->channel->send($this->notifiable, $this->notification);
@@ -41,7 +41,7 @@ class ChannelTest extends TestCase
     /** @test */
     public function it_fires_failure_event_on_failure()
     {
-        $message = $this->notification->toPushNotification($this->notifiable);
+        $message = $this->notification->toPusherBeamsNotification($this->notifiable);
         $data = $message->toArray();
         $this->beams->shouldReceive('publish')->with(['interest_name'], $data)->andReturn([]);
         $this->events->shouldReceive('fire')->with(Mockery::type(NotificationFailed::class));
@@ -61,7 +61,7 @@ class TestNotifiable
 
 class TestNotification extends Notification
 {
-    public function toPushNotification($notifiable)
+    public function toPusherBeamsNotification($notifiable)
     {
         return new PusherBeamsMessage();
     }
