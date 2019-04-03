@@ -27,10 +27,10 @@
     ],
     "require": {
         "php": ">=7.1",
-        "illuminate/events": "5.5.* || 5.6.*",
-        "illuminate/notifications": "5.5.* || 5.6.*",
-        "illuminate/queue": "5.5.* || 5.6.*",
-        "illuminate/support": "5.5.* || 5.6.*",
+        "illuminate/events": "5.5.* || 5.6.* || 5.7.*",
+        "illuminate/notifications": "5.5.* || 5.6.* || 5.7.*",
+        "illuminate/queue": "5.5.* || 5.6.*|| 5.7.*",
+        "illuminate/support": "5.5.* || 5.6.* || 5.7.*",
         "pusher/pusher-push-notifications": "^1.0"
     },
     "require-dev": {
