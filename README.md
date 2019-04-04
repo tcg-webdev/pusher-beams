@@ -88,7 +88,7 @@ class AccountApproved extends Notification
         return [PusherBeams::class];
     }
 
-    public function toPushNotification($notifiable)
+    public function toPusherBeamsNotification($notifiable)
     {
         return PusherBeamsMessage::create()
             ->iOS()
@@ -129,7 +129,7 @@ class AccountApproved extends Notification
         return [PusherBeams::class];
     }
 
-    public function toPushNotification($notifiable)
+    public function toPusherBeamsNotification($notifiable)
     {
         return PusherBeamsMessage::create()
             ->android()
