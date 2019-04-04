@@ -27,7 +27,7 @@ This fork exists to allow us to run both the Pusher Beams and old Pusher Channel
 You can install the package via composer:
 
 ``` bash
-composer require richk/pusher-beams
+composer require rich2k/pusher-beams
 ```
 
 You must install the service provider:
