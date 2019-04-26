@@ -34,7 +34,7 @@ class ChannelTest extends TestCase
     {
         $message = $this->notification->toPusherBeamsNotification($this->notifiable);
         $data = $message->toArray();
-        $this->beams->shouldReceive('publish')->with(['interest_name'], $data)->andReturn(['publishId' => '12345']);
+        $this->beams->shouldReceive('publishToInterests')->with(['interest_name'], $data)->andReturn(['publishId' => '12345']);
         $this->channel->send($this->notifiable, $this->notification);
     }
 
@@ -43,7 +43,7 @@ class ChannelTest extends TestCase
     {
         $message = $this->notification->toPusherBeamsNotification($this->notifiable);
         $data = $message->toArray();
-        $this->beams->shouldReceive('publish')->with(['interest_name'], $data)->andReturn([]);
+        $this->beams->shouldReceive('publishToInterests')->with(['interest_name'], $data)->andReturn([]);
         $this->events->shouldReceive('fire')->with(Mockery::type(NotificationFailed::class));
         $this->channel->send($this->notifiable, $this->notification);
     }
