@@ -49,10 +49,17 @@ class PusherBeams
         }
 
         try {
-            $response = $this->beams->publish(
-                $interest,
-                $notification->toPusherBeamsNotification($notifiable)->toArray()
-            );
+            if (method_exists($this->beams, 'publishToInterests')) {
+                $response = $this->beams->publishToInterests(
+                    $interest,
+                    $notification->toPusherBeamsNotification($notifiable)->toArray()
+                );
+            } else {
+                $response = $this->beams->publish(
+                    $interest,
+                    $notification->toPusherBeamsNotification($notifiable)->toArray()
+                );
+            }
         } catch (\Exception $e) {
             $this->events->fire(
                 new NotificationFailed($notifiable, $notification, 'pusher-beams')
