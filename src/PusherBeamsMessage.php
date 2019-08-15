@@ -19,7 +19,7 @@ class PusherBeamsMessage
      *
      * @var array
      */
-    private $supportedPlatforms = ['iOS', 'Android'];
+    protected $supportedPlatforms = ['iOS', 'Android'];
 
     /**
      * The message title.
@@ -160,7 +160,7 @@ class PusherBeamsMessage
      * @param \Rich2k\PusherBeams\PusherBeamsMessage $message
      * @return void
      */
-    private function withExtra(PusherBeamsMessage $message)
+    protected function withExtra(PusherBeamsMessage $message)
     {
         if ($message->getPlatform() == $this->platform) {
             throw CouldNotCreateMessage::platformConflict($this->platform);
@@ -327,7 +327,7 @@ class PusherBeamsMessage
      *
      * @param $message
      */
-    private function formatMessage(&$message)
+    protected function formatMessage(&$message)
     {
         if ($this->extraMessage) {
             $message = array_merge($message, $this->extraMessage->toArray());
