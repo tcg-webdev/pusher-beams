@@ -1,8 +1,8 @@
 # Pusher Beams - push notifications for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rich2k/pusher-beams.svg?style=flat-square)](https://packagist.org/packages/rich2k/pusher-beams)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/tcg-webdev/pusher-beams.svg?style=flat-square)](https://packagist.org/packages/tcg-webdev/pusher-beams)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Quality Score](https://img.shields.io/scrutinizer/g/neoighodaro/pusher-beams.svg?style=flat-square)](https://scrutinizer-ci.com/g/rich2k/pusher-beams)
+[![Quality Score](https://img.shields.io/scrutinizer/g/neoighodaro/pusher-beams.svg?style=flat-square)](https://scrutinizer-ci.com/g/tcg-webdev/pusher-beams)
 
 This package makes it easy to send [Pusher push notifications](https://docs.pusher.com/push-notifications) with Laravel (should work with other non-laravel PHP projects). It's based off [this package](https://github.com/laravel-notification-channels/pusher-push-notifications) by Mohamed Said.
 
@@ -27,7 +27,7 @@ This fork exists to allow us to run both the Pusher Beams and old Pusher Channel
 You can install the package via composer:
 
 ``` bash
-composer require rich2k/pusher-beams
+composer require tcg-webdev/pusher-beams
 ```
 
 You must install the service provider:
@@ -36,7 +36,7 @@ You must install the service provider:
 // config/app.php
 'providers' => [
     ...
-    Rich2k\PusherBeams\PusherBeamsServiceProvider::class,
+    TcgWebdev\PusherBeams\PusherBeamsServiceProvider::class,
 ],
 ```
 
@@ -77,8 +77,8 @@ In `config/broadcasting.php`
 Now you can use the channel in your `via()` method inside the `Notification` class.
 
 ``` php
-use Rich2k\PusherBeams\PusherBeams;
-use Rich2k\PusherBeams\PusherBeamsMessage;
+use TcgWebdev\PusherBeams\PusherBeams;
+use TcgWebdev\PusherBeams\PusherBeamsMessage;
 use Illuminate\Notifications\Notification;
 
 class AccountApproved extends Notification
@@ -118,8 +118,8 @@ class AccountApproved extends Notification
 You can send a single message to an iOS device and an Android device at the same time using the `withiOS()` and `withAndroid()` method:
 
 ``` php
-use Rich2k\PusherBeams\PusherBeams;
-use Rich2k\PusherBeams\PusherBeamsMessage;
+use TcgWebdev\PusherBeams\PusherBeams;
+use TcgWebdev\PusherBeams\PusherBeamsMessage;
 use Illuminate\Notifications\Notification;
 
 class AccountApproved extends Notification
@@ -166,7 +166,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Richard Hyland](https://github.com/Rich2k)
+- [Richard Hyland](https://github.com/TcgWebdev)
 - [Neo Ighodaro](https://github.com/neoighodaro)
 - Mohamed Said
 - [All Contributors](../../contributors)
