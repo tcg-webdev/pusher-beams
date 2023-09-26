@@ -34,7 +34,7 @@
         "pusher/pusher-push-notifications": "^1.0"
     },
     "require-dev": {
-        "mockery/mockery": "^0.9.5",
+        "mockery/mockery": "^1.6.6",
         "phpunit/phpunit": "8.*"
     },
     "autoload": {

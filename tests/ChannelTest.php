@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 
 class ChannelTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->beams = Mockery::mock(PushNotifications::class);
         $this->events = Mockery::mock(Dispatcher::class);
@@ -23,7 +23,7 @@ class ChannelTest extends TestCase
         $this->notifiable = new TestNotifiable;
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         Mockery::close();
         parent::tearDown();
