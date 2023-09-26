@@ -1,6 +1,6 @@
 <?php
 
-namespace Rich2k\PusherBeams;
+namespace TcgWebdev\PusherBeams;
 
 use Illuminate\Support\ServiceProvider;
 use Pusher\PushNotifications\PushNotifications;

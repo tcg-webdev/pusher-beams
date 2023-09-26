@@ -1,6 +1,6 @@
 <?php
 
-namespace Rich2k\PusherBeams\Test;
+namespace TcgWebdev\PusherBeams\Test;
 
 class Notifiable
 {

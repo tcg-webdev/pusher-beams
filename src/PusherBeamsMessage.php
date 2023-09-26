@@ -1,9 +1,9 @@
 <?php
 
-namespace Rich2k\PusherBeams;
+namespace TcgWebdev\PusherBeams;
 
 use Illuminate\Support\Arr;
-use Rich2k\PusherBeams\Exceptions\CouldNotCreateMessage;
+use TcgWebdev\PusherBeams\Exceptions\CouldNotCreateMessage;
 
 class PusherBeamsMessage
 {
@@ -95,7 +95,7 @@ class PusherBeamsMessage
      *
      * @return $this
      *
-     * @throws \Rich2k\PusherBeams\Exceptions\CouldNotCreateMessage
+     * @throws \TcgWebdev\PusherBeams\Exceptions\CouldNotCreateMessage
      */
     public function platform($platform)
     {
@@ -131,7 +131,7 @@ class PusherBeamsMessage
     /**
      * Set an extra message to be sent to Android.
      *
-     * @param \Rich2k\PusherBeams\PusherBeamsMessage $message
+     * @param \TcgWebdev\PusherBeams\PusherBeamsMessage $message
      * @return $this
      */
     public function withAndroid(PusherBeamsMessage $message)
@@ -144,7 +144,7 @@ class PusherBeamsMessage
     /**
      * Set an extra message to be sent to iOS.
      *
-     * @param \Rich2k\PusherBeams\PusherBeamsMessage $message
+     * @param \TcgWebdev\PusherBeams\PusherBeamsMessage $message
      * @return $this
      */
     public function withiOS(PusherBeamsMessage $message)
@@ -157,7 +157,7 @@ class PusherBeamsMessage
     /**
      * Set an extra message to be sent to another platform.
      *
-     * @param \Rich2k\PusherBeams\PusherBeamsMessage $message
+     * @param \TcgWebdev\PusherBeams\PusherBeamsMessage $message
      * @return void
      */
     protected function withExtra(PusherBeamsMessage $message)

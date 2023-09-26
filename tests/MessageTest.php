@@ -1,15 +1,15 @@
 <?php
 
-namespace Rich2k\PusherBeams\Test;
+namespace TcgWebdev\PusherBeams\Test;
 
 use Illuminate\Support\Arr;
 use PHPUnit\Framework\TestCase;
-use Rich2k\PusherBeams\PusherBeamsMessage;
-use Rich2k\PusherBeams\Exceptions\CouldNotCreateMessage;
+use TcgWebdev\PusherBeams\PusherBeamsMessage;
+use TcgWebdev\PusherBeams\Exceptions\CouldNotCreateMessage;
 
 class MessageTest extends TestCase
 {
-    /** @var \Rich2k\PusherBeams\PusherBeamsMessage */
+    /** @var \TcgWebdev\PusherBeams\PusherBeamsMessage */
     protected $message;
 
     public function setUp()

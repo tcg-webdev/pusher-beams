@@ -1,6 +1,6 @@
 <?php
 
-namespace Rich2k\PusherBeams\Exceptions;
+namespace TcgWebdev\PusherBeams\Exceptions;
 
 use Exception;
 

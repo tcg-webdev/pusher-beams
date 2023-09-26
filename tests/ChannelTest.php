@@ -1,13 +1,13 @@
 <?php
 
-namespace Rich2k\PusherBeams\Test;
+namespace TcgWebdev\PusherBeams\Test;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Notifications\Events\NotificationFailed;
 use Illuminate\Notifications\Notifiable;
-use Rich2k\PusherBeams\PusherBeams;
+use TcgWebdev\PusherBeams\PusherBeams;
 use Illuminate\Notifications\Notification;
-use Rich2k\PusherBeams\PusherBeamsMessage;
+use TcgWebdev\PusherBeams\PusherBeamsMessage;
 use Mockery;
 use Pusher\PushNotifications\PushNotifications;
 use PHPUnit\Framework\TestCase;

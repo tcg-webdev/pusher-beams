@@ -1,5 +1,5 @@
 {
-    "name": "rich2k/pusher-beams",
+    "name": "tcg-webdev/pusher-beams",
     "description": "Pusher Beams is a push notification service from Pusher.",
     "keywords": [
         "laravel",
@@ -10,10 +10,10 @@
         "beams"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/Rich2k/pusher-beams",
+    "homepage": "https://github.com/tcg-webdev/pusher-beams",
     "support": {
-        "issues": "https://github.com/Rich2k/pusher-beams/issues",
-        "source": "https://github.com/Rich2k/pusher-beams"
+        "issues": "https://github.com/tcg-webdev/pusher-beams/issues",
+        "source": "https://github.com/tcg-webdev/pusher-beams"
     },
     "authors": [
         {
@@ -26,25 +26,25 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "illuminate/events": "5.5.* || 5.6.* || 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0",
-        "illuminate/notifications": "5.5.* || 5.6.* || 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0",
-        "illuminate/queue": "5.5.* || 5.6.*|| 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0",
-        "illuminate/support": "5.5.* || 5.6.* || 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "php": ">=8.1",
+        "illuminate/events": "5.5.* || 5.6.* || 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+        "illuminate/notifications": "5.5.* || 5.6.* || 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+        "illuminate/queue": "5.5.* || 5.6.*|| 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+        "illuminate/support": "5.5.* || 5.6.* || 5.7.*|| 5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
         "pusher/pusher-push-notifications": "^1.0"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.5",
-        "phpunit/phpunit": "7.*"
+        "phpunit/phpunit": "8.*"
     },
     "autoload": {
         "psr-4": {
-            "Rich2k\\PusherBeams\\": "src"
+            "TcgWebdev\\PusherBeams\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rich2k\\PusherBeams\\Test\\": "tests"
+            "TcgWebdev\\PusherBeams\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -53,7 +53,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rich2k\\PusherBeams\\PusherBeamsServiceProvider"
+                "TcgWebdev\\PusherBeams\\PusherBeamsServiceProvider"
             ]
         }
     },
